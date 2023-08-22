@@ -1,6 +1,4 @@
 ﻿using CodeGroup.DesafioTecnico.Api.Infra.Configurations;
-using CodeGroup.DesafioTecnico.Api.Infra.Database.DbContexts;
-using CodeGroup.DesafioTecnico.Api.Infra.Extensions;
 using CodeGroup.DesafioTecnico.Api.IoC;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;
@@ -52,9 +50,6 @@ public class Startup
             endpoints.MapControllers();
         });
 
-
-        //Migrations
-        app.ApplicationServices.MigrateDatabase<CodeGroupDbContext>();
-
     }
+
 }

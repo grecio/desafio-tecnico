@@ -8,7 +8,7 @@ public class CodeGroupDbContext : DbContext
 {
     public CodeGroupDbContext(DbContextOptions<CodeGroupDbContext> options) : base(options)
     {
-
+        
     }
 
     public DbSet<Person> Person { get; set; }
